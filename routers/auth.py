@@ -7,8 +7,8 @@ from sqlalchemy.orm import Session
 from starlette import status
 from fastapi.security import OAuth2PasswordRequestForm, OAuth2PasswordBearer
 from jose import jwt, JWTError
-from ..database import SessionLocal
-from ..models import Users
+from database import SessionLocal
+from models import Users
 from fastapi.templating import Jinja2Templates
 
 router = APIRouter(
