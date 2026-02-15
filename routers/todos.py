@@ -5,7 +5,7 @@ from starlette import status
 from pydantic import BaseModel, Field
 from database import SessionLocal
 from models import Todos
-from auth import get_current_user
+from routers.auth import get_current_user
 from starlette.responses import RedirectResponse
 from fastapi.templating import Jinja2Templates
 

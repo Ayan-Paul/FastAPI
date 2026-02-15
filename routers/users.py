@@ -6,7 +6,7 @@ from passlib.context import CryptContext
 from pydantic import BaseModel, Field
 from database import SessionLocal
 from models import Users
-from auth import get_current_user
+from routers.auth import get_current_user
 
 router = APIRouter(
     prefix='/user',

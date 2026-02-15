@@ -5,7 +5,7 @@ from starlette import status
 from models import Todos
 from pydantic import BaseModel, Field
 from database import SessionLocal
-from auth import get_current_user
+from routers.auth import get_current_user
 
 router = APIRouter(
     prefix='/admin',
